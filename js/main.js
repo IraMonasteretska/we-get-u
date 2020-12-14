@@ -13,6 +13,8 @@ headerLinkBtn.addEventListener('click', function(){
   headerMenu.classList.remove('active')
 })
 
+
+if(document.querySelector('.index-body')){
 // change with scroll
 function onScroll(event){
   let sections = document.querySelectorAll('.sticky__fixed-item');
@@ -41,6 +43,9 @@ function onScroll(event){
 };
 
 window.document.addEventListener('scroll', onScroll );
+}
+
+
 
 // change bg
 
@@ -105,6 +110,8 @@ window.addEventListener('scroll', function(){
    }
    scrollPrev = scrolled;
  })
+
+ if(document.querySelector('.index-body')){
 let observerThumb = document.querySelector('.observer-scroll-thumb')
 //  change menu scroll
 function getChangeMenu(event){
@@ -150,16 +157,16 @@ function getChangeMenu(event){
 };
 
 window.document.addEventListener('scroll', getChangeMenu );
-
+ }
 
 // air animate
 
-let paperAir = document.querySelector(".paper-air")
-function getAir(){
-paperAir.animate([
-  { transform: 'translate( 0, 0)' }, 
-  { transform: 'translate(100%, -140vh)' }
-], {
-  duration: 1500,
-})
-}
+// let paperAir = document.querySelector(".paper-air")
+// function getAir(){
+// paperAir.animate([
+//   { transform: 'translate( 0, 0)' }, 
+//   { transform: 'translate(100%, -140vh)' }
+// ], {
+//   duration: 1500,
+// })
+// }

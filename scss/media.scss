@@ -196,10 +196,7 @@
     &__right-text {
       width: 85%;
       &:before {
-        top: auto;
-        left: 50%;
-        transform: translateX(-50%);
-        bottom: -80px;
+      display: none;
       }
     }
   }
@@ -373,6 +370,18 @@
   display: flex;
 }
 
+
+// .sticky__scroll-item-img {
+//   display: block;
+//   width: 80%;
+//   margin: 0 auto;
+// }
+
+.sticky__scroll-anim-img{
+
+}
+
+
   .sticky {
     display: block;
 
@@ -487,11 +496,11 @@
 
     &__right-text {
       line-height: 200%;
-      &:before {
-        bottom: -90px;
-      }
     }
   }
+
+
+ 
 
   .partners {
     &__title {
