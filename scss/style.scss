@@ -329,16 +329,11 @@
   }
 
   &__bg {
-    // background: linear-gradient(
-    //   180deg,
-    //   #1961a9 50%,
-    //   rgba(25, 97, 169, 0.62) 100%
-    // );
-
+  
     background: linear-gradient(180deg, #1961A9 0%, rgba(25, 97, 169, 0.62) 100%);
     height: 600px;
     position: relative;
-    margin-top: -20px;
+    margin-top: -1px;
     padding-top: 20px;
     &:before {
       position: absolute;
@@ -1554,12 +1549,14 @@
 .portfolio__hide.active {
   position: relative;
   opacity: 1;
+  height: auto;
 }
 
 .portfolio__hide {
   padding-bottom: 100px;
   position: absolute;
   opacity: 0;
+  height: 0;
   transition: all 1.8s ease-out;
 
   .portfolio {
@@ -1712,5 +1709,32 @@
 .video-section__left {
   margin-top: 40px;
 }
+
+.sub-offer__bg {
+  margin-top: -1px;
+}
+
+.portfolio .portfolio-visible__dark-bg:after {
+  left: -3499px;
+}
+
+.portfolio .portfolio-visible__dark-part:before {
+
+  bottom: -1px;
+  right: -4999px;
+}
+
+.portfolio .portfolio-visible__dark-bg:before {
+  right: -3499px;
+}
+
+.portfolio .portfolio-visible__dark-part {
+  margin-bottom: -1px;
+}
+
+.footer__bg {
+  margin-top: -1px;
+}
+
 
 @import "media.scss";

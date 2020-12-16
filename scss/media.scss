@@ -1,4 +1,11 @@
 @media (max-width: 1515px) {
+
+
+
+  .sub-header__letter-1 {
+    top: -30px;
+  }
+
   .marketing-body {
     .header__logo{
       transform: translateX(0px);
@@ -88,6 +95,7 @@
 
     &__letter-1 {
       width: 50%;
+      top: -10px;
     }
 
     &__letter-2 {
@@ -486,6 +494,9 @@
 }
 
 @media (max-width: 998px) {
+
+
+
   .portfolio{
   .portfolio-visible__dark-bg{
     display: block;
@@ -803,6 +814,10 @@
     &__input {
       width: calc(100% - 20px);
     }
+  }
+
+  .we-offer__read-more{
+    margin-bottom: 40px;
   }
 }
 
@@ -1238,6 +1253,12 @@
 }
 
 @media (max-width: 450px) {
+
+
+  .sub-offer {
+    background-position: center 50px;
+}
+
   .portfolio__hide {
     .portfolio {
       &__item {
@@ -1363,9 +1384,10 @@ padding-top: 20px;
 
 
 @media (max-width: 340px) {
+  .sub-header__subtitle{}
   .sub-header {
     &__letter {
-      top: 80px;
+      top: 100px;
     }
   }
 

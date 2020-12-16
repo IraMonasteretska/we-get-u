@@ -257,7 +257,9 @@ if (document.querySelector(".marketing-body")) {
     window.addEventListener("load", greetingBlockAnimation);
   })();
 
- 
-  
+
+
+
+
 
 }
