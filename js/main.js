@@ -43,7 +43,6 @@ function onScroll(event){
 };
 
 window.document.addEventListener('scroll', onScroll );
-}
 
 
 
@@ -91,6 +90,7 @@ window.addEventListener('scroll', function() {
 });
 
 Visible (element);
+}
 
 // hide header
 
@@ -159,14 +159,64 @@ function getChangeMenu(event){
 window.document.addEventListener('scroll', getChangeMenu );
  }
 
-// air animate
 
-// let paperAir = document.querySelector(".paper-air")
-// function getAir(){
-// paperAir.animate([
-//   { transform: 'translate( 0, 0)' }, 
-//   { transform: 'translate(100%, -140vh)' }
-// ], {
-//   duration: 1500,
-// })
-// }
+if(document.querySelector('.marketing-body')){
+
+document.querySelector(".marketing-body").addEventListener('click', getHidePosts)
+
+function getHidePosts(){
+  document.querySelector(".portfolio__hide").classList.add('active')
+}
+
+
+
+
+
+let element = document.querySelector('#changeAnim');
+let Visible = function (target) {
+  let targetPosition = {
+      top: window.pageYOffset + target.getBoundingClientRect().top,
+      left: window.pageXOffset + target.getBoundingClientRect().left,
+      right: window.pageXOffset + target.getBoundingClientRect().right,
+      bottom: window.pageYOffset + target.getBoundingClientRect().bottom
+    },
+
+    windowPosition = {
+      top: window.pageYOffset,
+      left: window.pageXOffset,
+      right: window.pageXOffset + document.documentElement.clientWidth,
+      bottom: window.pageYOffset + document.documentElement.clientHeight
+    };
+
+  if (targetPosition.bottom > windowPosition.top && 
+    targetPosition.top < windowPosition.bottom && 
+    targetPosition.right > windowPosition.left && 
+    targetPosition.left < windowPosition.right) { 
+
+
+    document.querySelector(".sub-offer__bg").classList.add('active')
+  let animateScrollJs =  document.querySelectorAll(".animate-js-scroll")
+    for( let i of animateScrollJs ){
+      i.classList.add('active')
+    }
+  } else {
+  };
+};
+
+window.addEventListener('scroll', function() {
+  Visible (element);
+});
+
+Visible (element);
+}
+
+
+
+(function () {
+  function greetingBlockAnimation () {
+    document.querySelector('.left-anim-video').classList.add('active');
+    document.querySelector('.right-anim-video').classList.add('active');
+  }
+
+  window.addEventListener('load', greetingBlockAnimation);
+})();
