@@ -185,7 +185,29 @@
   }
 }
 
+@media (max-width: 1360px){
+
+  .design-body {
+  .video-section__title-with-img{
+    br{
+      display: block;
+    }
+    img{
+     top: auto;
+     bottom: 0;
+    right: -50px;
+        }
+  }
+}
+
+
+}
+
+
+
 @media (max-width: 1140px) {
+
+
 
   .sub-offer__bg:after,
   .animate-js-scroll {
@@ -197,6 +219,19 @@
   margin-left: 30px;
   }
 }
+
+
+
+.seo-body, .design-body{
+  .sub-offer {
+  background-size: 700px;
+  min-height: 400px;
+  }
+}
+
+
+
+
 
   .sub-offer {
     background-size: 700px;
@@ -491,6 +526,21 @@
       width: 150px;
     }
   }
+
+
+  .design-body {
+    .video-section__title-with-img{
+      br{
+        display: block;
+      }
+      img{
+       top: auto;
+       bottom: 0;
+        width: 15%;
+      right: -60px;
+          }
+    }
+  }
 }
 
 @media (max-width: 998px) {
@@ -504,7 +554,7 @@
   .portfolio-visible__dark-bg-right{
     .header_list-button{
       margin-top: 40px;
-    margin-left: 0px;
+    margin-left: 5px;
     }
   }
   }
@@ -819,6 +869,19 @@
   .we-offer__read-more{
     margin-bottom: 40px;
   }
+
+  
+  .design-body {
+    .video-section__title-with-img{
+      text-align: center;
+      img{
+       top: auto;
+       bottom: 0;
+        width: 15%;
+      right: -60px;
+          }
+    }
+  }
 }
 
 @media (max-width: 906px) {
@@ -829,6 +892,17 @@
 }
 
 @media (max-width: 718px) {
+
+
+  .seo-body, .design-body{
+    .sub-offer {
+      background-size: 100%;
+      min-height: auto;
+      padding-top: 100px;
+      padding-bottom: 50px;
+    }
+  }
+
   .sub-offer {
     background-size: 100%;
     min-height: auto;
@@ -1068,7 +1142,13 @@
 }
 
 @media (max-width: 550px) {
-
+  .design-body {
+    .video-section__title-with-img{
+      img{
+    display: none;
+          }
+    }
+  }
 
 
   .we-offer {
@@ -1250,9 +1330,27 @@
       width: 85px;
     }
   }
+
+  .seo-br{
+transform: translateX(0) !important;
+   br{
+    display: block;
+  }
+
+img{
+top: 20%  !important;
+}
+}
+  
 }
 
 @media (max-width: 450px) {
+
+  .seo-body, .design-body {
+    .sub-offer {
+      background-position: center 50px;
+  }
+  }
 
 
   .sub-offer {
@@ -1366,11 +1464,9 @@
   .sticky__scroll-item {
 padding-top: 20px;
   }
-
 }
 
 @media (max-width: 380px) {
-
 .we-offer__right-icon{
   margin-top: 50px;
 }
@@ -1381,14 +1477,10 @@ padding-top: 20px;
  
 }
 
-
-
 @media (max-width: 340px) {
-  .sub-header__subtitle{}
   .sub-header {
     &__letter {
       top: 100px;
     }
   }
-
 }

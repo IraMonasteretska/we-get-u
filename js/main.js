@@ -225,32 +225,27 @@ if (document.querySelector(".marketing-body")) {
       document.querySelector(".left-anim-video").classList.add("active");
       document.querySelector(".right-anim-video").classList.add("active");
    
-      function getOpVideo1() {
-
-
-        document.querySelector(".video-section__filter").animate([
-          { background: 'rgba(0,93,196,0.6)' },
-          { background: 'rgba(0,93,196,1)' },
-          { background: 'rgba(0,93,196,0.6)' }
-        ], {
-          duration: 1500,
-        })
-
-      function getOpVideo() {
-        document.querySelector(".video-section__filter").animate([
-          { background: 'rgba(0,93,196,0.6)' },
-          { background: 'rgba(0,93,196,1)' },
-          { background: 'rgba(0,93,196,0.6)' }
-        ], {
-          duration: 2000,
-        })
-      }
-
-      setInterval(getOpVideo, 20000);
-    }
-     
-
-      setTimeout(getOpVideo1, 19500);
+    //   function getOpVideo1() {
+    //     document.querySelector(".video-section__filter").animate([
+    //       { background: 'rgba(0,93,196,0.6)' },
+    //       { background: 'rgba(0,93,196,1)' },
+    //       { background: 'rgba(0,93,196,0.6)' }
+    //     ], {
+    //       duration: 1500,
+    //     })
+    //   function getOpVideo() {
+    //     document.querySelector(".video-section__filter").animate([
+    //       { background: 'rgba(0,93,196,0.6)' },
+    //       { background: 'rgba(0,93,196,1)' },
+    //       { background: 'rgba(0,93,196,0.6)' }
+    //     ], {
+    //       duration: 2000,
+    //     })
+    //   }
+    //   setInterval(getOpVideo, 20000);
+    // }
+    
+    //   setTimeout(getOpVideo1, 19500);
 
     }
 
