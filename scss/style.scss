@@ -1088,7 +1088,7 @@
   justify-content: space-between;
 
   &__left {
-    width: 37%;
+    width: 57%;
   }
 
   &__breads-home {
@@ -1131,7 +1131,6 @@
     line-height: 150%;
     color: #ffffff;
     position: relative;
-    width: max-content;
     transform-style: preserve-3d;
     z-index: 10;
     // img {
@@ -1355,10 +1354,10 @@
 
 .sub-offer {
   position: relative;
-  background: url(../img/first-block-img.png) no-repeat;
+  background: url(../img/pages/img-digital-page.png) no-repeat;
   background-position: center bottom;
   background-size: 900px;
-  min-height: 500px;
+  min-height: 600px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1804,6 +1803,16 @@
     background: #0c3360;
   }
 
+  .footer__right-part:before {
+    right: -19px;
+    z-index: -1;
+  }
+
+  .footer__right-part:after{
+    left: -19px;
+    z-index: -1;
+  }
+
   .footer__bg:before,
   .main-footer-end__bg,
   .portfolio .portfolio-visible__dark-bg:after,
@@ -1825,8 +1834,9 @@
   }
 
   .sub-offer {
-    background: url(../img/two-block-img.png) no-repeat;
-    background-position: center bottom;
+    background: url(../img/pages/img-seo-page.png) no-repeat;
+    background-position: center 0;
+    min-height: 600px;
   }
   .anim-video {
     background: #0c3360;
@@ -1852,26 +1862,22 @@
     background: rgba(0, 70, 147, 0.6);
   }
 
-  .video-section__video-cont {
-    &:before,
-    &:after {
-      background: #246fbb;
-    }
-  }
+  // .video-section__video-cont {
+  //   &:before,
+  //   &:after {
+  //     background: #246fbb;
+  //   }
+  // }
 
   .sub-offer__bg:after {
-    background: linear-gradient(
-      180deg,
-      #1e68b1 0%,
-      rgba(30, 104, 177, 0.5) 100%
-    );
+    background: linear-gradient(180deg, #1961A9 0%, rgba(30, 104, 177, 0.5) 100%);
   }
 
   .portfolio .portfolio-visible__dark-bg,
   .portfolio .portfolio-visible__dark-bg:before,
   .portfolio .portfolio-visible__dark-part,
   .dark-bg {
-    background: #246fbb;
+    background: #1961A9;
   }
 
   .footer__bg:before,
@@ -1879,7 +1885,7 @@
   .portfolio .portfolio-visible__dark-bg:after,
   .portfolio .portfolio-visible__dark-part:before,
   .header__container {
-    background: #246fbb;
+    background: #1961A9;
   }
 
   .we-offer__right-item-subicon {
@@ -1903,16 +1909,17 @@
   }
 
   .sub-offer {
-    background: url(../img/three-block-img.png) no-repeat;
-    background-position: center bottom;
+    background: url(../img/pages/img-design-page.png) no-repeat;
+    background-position: center 0;
+    min-height: 600px;
   }
   .anim-video {
-    background: #246fbb;
+    background: #1961A9;
   }
 
   @media (max-width: 998px) {
     .portfolio .portfolio-visible__dark-part:after {
-      background: #246fbb;
+      background: #1961A9;
     }
   }
 
@@ -1970,6 +1977,16 @@
 
 .footer__bg::after {
   background: url(../img/paper-air-design.svg) no-repeat;
+}
+.footer__right-part{
+  background: #1961A9;
+  &:after{
+    background: #1961A9;
+  }
+
+  &:before{
+    background: #1961A9;
+  }
 }
 
 }

@@ -79,7 +79,7 @@
   }
 
   .video-section__left {
-    width: 40%;
+    width: 60%;
   }
 
   .video-section {
@@ -689,6 +689,7 @@
 
     &__title-with-img {
       margin: 0 auto;
+      text-align: center;
       margin-top: 40px;
     }
 
@@ -904,11 +905,11 @@
   }
 
   .sub-offer {
-    background-size: 100%;
-    min-height: auto;
-    padding-top: 100px;
-    padding-bottom: 50px;
-
+    background-size: 100% !important;
+    min-height: auto !important;
+    padding-top: 100px !important;
+    padding-bottom: 50px !important;
+ 
     &__title--white {
       font-size: 20px;
     }
