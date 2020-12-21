@@ -1,7 +1,4 @@
 @media (max-width: 1515px) {
-
-
-
   .sub-header__letter-1 {
     top: -30px;
   }
@@ -14,9 +11,18 @@
 
 }
 
-
-
 @media (max-width: 1440px) {
+
+  .about__right-text {
+    &:before {
+      left: -80px;
+    width: 70px;
+      height: 70px;
+      background: url(../img/about-img.svg) no-repeat;
+      background-size: cover;
+    }
+  }
+
   .portfolio {
     .portfolio-visible__dark-bg {
       padding-top: 60px;
@@ -127,7 +133,7 @@
   }
 
   .sticky__scroll-anim-img-3 {
-    width: 10%;
+    width: 8%;
   }
 
   @keyframes letter-1 {
@@ -202,8 +208,6 @@
 
 
 }
-
-
 
 @media (max-width: 1140px) {
 
@@ -690,7 +694,7 @@
     &__title-with-img {
       margin: 0 auto;
       text-align: center;
-      margin-top: 40px;
+      margin-top: 65px;
     }
 
     &__right {
@@ -1065,7 +1069,8 @@
         overflow: hidden;
         // background: #0b1332;
         background: #EAF1F9;
-        width: 20px;
+        width: 21px;
+        z-index: -1;
       }
 
       &:after {
@@ -1077,7 +1082,8 @@
         overflow: hidden;
         // background: #0b1332;
         background: #EAF1F9;
-        width: 20px;
+        width: 23px;
+        z-index: -1;
       }
     }
 
@@ -1231,6 +1237,7 @@
     &:after {
       top: 110px;
       bottom: 0;
+      height: 145px;
     }
   }
 
@@ -1275,7 +1282,7 @@
   .partners {
     &__title {
       font-size: 20px;
-      line-height: 20px;
+      line-height: 28px;
       margin-top: 20px;
     }
     &__item {
@@ -1288,11 +1295,15 @@
   }
 
   .sticky__scroll-anim-img-2 {
-    width: 17%;
+    width: 13%;
+    bottom: 0px;
+    right: 0px;
   }
 
   .sticky__scroll-anim-img-3 {
-    width: 12%;
+    bottom: 5px;
+    right: 5px;
+    width: 8%;
   }
 
   .portfolio__hide {
@@ -1345,6 +1356,9 @@ img{
 top: 20%  !important;
 }
 }
+
+
+
   
 }
 
@@ -1417,7 +1431,7 @@ top: 20%  !important;
 
   .sub-header {
     &__letter {
-      top: 70px;
+      top: 170px;
     }
   }
 
@@ -1493,7 +1507,7 @@ padding-bottom: 80px;
 @media (max-width: 340px) {
   .sub-header {
     &__letter {
-      top: 100px;
+      top: 180px;
     }
   }
 }

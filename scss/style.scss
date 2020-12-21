@@ -296,19 +296,19 @@
 
 @keyframes letter-3 {
   0% {
-    transform: translateX(-25px);
+    transform: translateX(-15px);
   }
   25% {
-    transform: translateY(-14px);
+    transform: translateY(-24px);
   }
   50% {
-    transform: translateY(12px);
+    transform: translateY(22px);
   }
   75% {
-    transform: translateX(20px);
+    transform: translateX(10px);
   }
   100% {
-    transform: translateY(13px);
+    transform: translateY(3px);
   }
 }
 
@@ -326,7 +326,7 @@
     width: 160px;
     left: 40%;
     top: 50px;
-    z-index: 10000;
+    z-index: 10;
     display: block;
     &:before {
       position: absolute;
@@ -419,7 +419,7 @@
       content: "";
       position: absolute;
       top: -20px;
-      left: -70px;
+      left: -100px;
       width: 90px;
       height: 90px;
       background: url(../img/about-img.svg) no-repeat;
@@ -538,6 +538,12 @@
   &__scroll-anim-img-2 {
     bottom: -10px;
     right: -10px;
+  }
+
+  &__scroll-anim-img-3 {
+    bottom: 10px;
+    right: 10px;
+    width: 8%;
   }
 
   @keyframes scroll-img-anim {
@@ -683,7 +689,7 @@
     &:after {
       position: absolute;
       z-index: 10;
-      width: 130px;
+      width: 135px;
       height: 500px;
       content: "";
       top: 120px;
@@ -734,6 +740,7 @@
     line-height: 150%;
     color: #ffffff;
     max-width: 400px;
+    padding-right: 40px;
   }
 
   &__right-part {
@@ -761,9 +768,13 @@
     color: #0b1332;
     padding: 15px;
     resize: none;
+    outline: none;
     &::placeholder {
       // color: #7c9dbd;
       color: #4f80b0;
+    }
+    &:focus{
+      border: 1px solid #F5A623 !important;
     }
   }
 
@@ -787,9 +798,13 @@
     color: #0b1332;
     // border: 1px solid #7c9dbd;
     border: 1px solid #4f80b0;
+     outline: none;
     &::placeholder {
       // color: #7c9dbd;
       color: #4f80b0;
+    }
+    &:focus{
+      border: 1px solid #F5A623 !important;
     }
   }
 
@@ -875,6 +890,7 @@
     // color: #0b1332;
     color: #eaf1f9;
     transition: all 0.3s ease-out;
+    font-weight: 400 !important;
     &:hover {
       color: #f5a623;
     }
@@ -1202,7 +1218,7 @@
     bottom: 90px;
     right: 0;
     position: absolute;
-    z-index: 100;
+    z-index: 10;
     transform-style: preserve-3d;
   }
 
@@ -1316,7 +1332,8 @@
     margin-left: 30px;
     font-size: 18px;
     line-height: 22px;
-    color: #2f7dcc;
+    // color: #2f7dcc;
+    color: #1961A9;
     transition: all 0.3s ease-out;
   }
 
