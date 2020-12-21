@@ -12,7 +12,11 @@
 }
 
 @media (max-width: 1440px) {
-
+  .footer {
+    &__form {
+     width: 95%;
+    }
+  }
   .about__right-text {
     &:before {
       left: -80px;
@@ -549,7 +553,12 @@
 
 @media (max-width: 998px) {
 
-
+  .footer {
+   
+    &__form {
+     width: 100%;
+    }
+  }
 
   .portfolio{
   .portfolio-visible__dark-bg{
